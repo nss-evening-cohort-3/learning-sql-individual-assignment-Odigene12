@@ -1,1 +1,0 @@
-SELECT CustomerId, FirstName || " " || LastName AS 'Customer Name', Country FROM Customer Where Country IS NOT "USA"
