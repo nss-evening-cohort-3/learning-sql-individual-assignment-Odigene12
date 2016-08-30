@@ -1,0 +1,1 @@
+SELECT Total, Customer.FirstName|| " " || Customer.LastName AS 'Customer Name' , Customer.Country, Employee.FirstName || " " || Employee.LastName AS "Agent Name" FROM Employee JOIN Customer On Customer.CustomerId == Employee.EmployeeId JOIN Invoice ON Invoice.InvoiceId == Employee.EmployeeID Where Employee.Title Like "%Agent"
