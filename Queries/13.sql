@@ -1,0 +1,1 @@
+SELECT Track.Name As "Track Name", Artist.Name As "Artist Name",  *  From InvoiceLine Join Track on InvoiceLine.TrackId == Track.TrackId Join Artist On Track.TrackId  == Artist.ArtistId
