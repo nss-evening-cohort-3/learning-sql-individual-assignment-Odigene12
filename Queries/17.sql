@@ -1,0 +1,1 @@
+SELECT Count(InvoiceLineId), * FROM invoice Join InvoiceLine On Invoice.InvoiceId == InvoiceLine.InvoiceId Group By Invoice. InvoiceId 
