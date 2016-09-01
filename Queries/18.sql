@@ -1,0 +1,1 @@
+SELECT FirstName|| " "|| LastName As "Sales Agent", Title, Total As "Total Sales" FROM Invoice Join Employee On Employee.EmployeeId == Invoice.InvoiceId  Where Title Like "%Agent"
