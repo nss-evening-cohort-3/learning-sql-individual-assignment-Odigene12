@@ -1,1 +1,5 @@
-SELECT FirstName|| " "|| LastName As "Sales Agent", Title, Total As "Total Sales" FROM Invoice Join Employee On Employee.EmployeeId == Invoice.InvoiceId  Where Title Like "%Agent"
+SELECT   Employee.FirstName || " "|| Employee.LastName As "Sales Agent", Sum (Total) As "Total Sales"  FROM Customer  
+Join Invoice On Invoice.CustomerId == Customer.CustomerId 
+Join Employee On Customer.SupportRepId == Employee.EmployeeId
+Where SupportRepId <= 5
+Group By SupportRepId 

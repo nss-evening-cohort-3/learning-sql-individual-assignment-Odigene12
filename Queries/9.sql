@@ -1,2 +1,2 @@
-SELECT Count (InvoiceDate) As '2009 Invoice Total' From Invoice Where InvoiceDate like  "2009%"
-SELECT Count (InvoiceDate) As '2011 Invoice Total' From Invoice Where InvoiceDate like  "2011%"
+SELECT Count (InvoiceDate) As '2009 Invoice Total', Sum (Total) As 'Total Sales' From Invoice Where InvoiceDate like  "2009%" 
+SELECT Count (InvoiceDate) As '2011 Invoice Total', Sum (Total) As 'Total Sales' From Invoice Where InvoiceDate like  "2011%" 
